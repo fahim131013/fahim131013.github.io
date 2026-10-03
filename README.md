@@ -1,35 +1,59 @@
 # Tanvir Ahmed Fahim — Personal Portfolio
 
-A responsive static portfolio for https://fahim131013.github.io.
+Responsive static portfolio for https://fahim131013.github.io.
 
-## Publish on GitHub Pages
-1. Extract the downloaded ZIP on your computer.
-2. Open the repository `fahim131013/fahim131013.github.io`.
+## Upload the update
+1. Extract this ZIP.
+2. Open `fahim131013/fahim131013.github.io` on GitHub.
 3. Choose **Add file → Upload files**.
-4. Drag the CONTENTS of the extracted folder into GitHub, including the `assets` folder. `index.html` must be at the top level of the repository, not inside another folder. Do not upload the ZIP itself.
-5. Choose **Commit changes**. Replace the existing README if prompted.
-6. Open **Settings → Pages**.
-7. Under **Build and deployment**, choose **Deploy from a branch**. Choose **main** and **/(root)**, then **Save**.
-8. Wait for the Pages deployment to finish. Open https://fahim131013.github.io and refresh.
+4. Drag all extracted files and the complete `assets` folder into the upload area. Keep `index.html` at the repository root. Do not upload the ZIP itself or nest the site inside another folder.
+5. Commit the update, replacing the matching existing files.
+6. Keep **Settings → Pages → Deploy from a branch → main → /(root)**.
+7. Wait for the Pages deployment to complete, then refresh the website.
 
-## Preview on your computer
-Open `index.html` in your browser. No build tools are needed. An internet connection loads the optional Google Fonts; local fonts are used if unavailable. All content, animations, images, and filters otherwise run locally. Copy email may require HTTPS; the visible email link remains usable.
+## Activate email messages — required once
+The form sends visitor messages to **tanvirahmedfahim.baiust@gmail.com** using FormSubmit.
 
-## Files
-- `index.html`: all portfolio text, publications, project descriptions, and links.
-- `styles.css`: colours, typography, responsive layout, and animations.
-- `script.js`: publication filtering, mobile navigation, scroll effects, and copy email.
-- `assets/portrait.png`: supplied portrait, unchanged.
-- `assets/Tanvir-Ahmed-Fahim-CV.pdf`: supplied academic CV, unchanged.
-- `assets/Tanvir-Ahmed-Fahim-Resume.pdf`: supplied professional resume, unchanged.
-- `favicon.svg`: browser icon.
+1. After publishing, open the live site's **Send me a message** form.
+2. Submit a short test message and complete the service's CAPTCHA.
+3. Check that Gmail inbox (and Spam) for the FormSubmit activation email. Click its confirmation link.
+4. Submit another test from the live site. Confirm the message arrives and that Reply addresses the email entered in the form.
 
-## Updating content
-Edit text in `index.html` and commit the change. For each new paper, copy a complete `<article class="paper">` entry, set its `data-status` to `Published`, `Accepted`, or `Under review`, and update the filter count in the corresponding button. Add `hidden` to non-published entries. Keep manuscript statuses accurate. The counts are based on the supplied October 2026 academic CV, not live citation services.
+The destination and form validation are configured, but inbox activation and live delivery have not been completed by the builder. No Gmail password or API key is required. The form depends on FormSubmit availability. If it fails, visitors can use the email or WhatsApp links.
 
-Replace either PDF while retaining the same filename to update its download. Both original PDFs contain contact and referee details: review them before public upload and substitute a public CV if desired. The webpage itself uses only the professional email and city/country, and does not list referee contact details.
+The form uses the service's default CAPTCHA plus a honeypot, and includes a short privacy notice. The thank-you URL is `https://fahim131013.github.io/thanks.html`; update `_next` in index.html if you change domain or repository path. Documentation: https://formsubmit.co/documentation.
 
-The degree is marked thesis defense pending, matching both CVs. Internship dates are displayed at month level because the two CVs differ on the start day. Leadership dates are shown at year level where the CVs differ on months. The 28 GHz publication DOI is taken from the PDF's embedded hyperlink to avoid the malformed text extraction of its underscore.
+## Included changes
+- Removed the TAF mark from navigation and footer.
+- Hero wording: Electrical and Electronic Engineer.
+- Contact address: Birsreshto Captain Jahangir Hall, Cumilla 3501, Bangladesh.
+- Google Scholar, ORCID, ResearchGate, LinkedIn, Facebook and WhatsApp icons and links.
+- Updated personal email throughout the website and in both downloadable PDFs. Referee emails are unchanged.
+- Removed the publication-status date sentence from the webpage.
+- Five project galleries with three captioned figures each, matched to portfolio.docx.
+- Nagorik TV certificate, Army photo and privacy-redacted retirement-card preview.
+- Best Poster Award certificate, poster presentation and award ceremony gallery.
+- Accessible enlarged previews with keyboard controls, focus restoration, full-size links and image-link fallback when JavaScript is unavailable.
+- Responsive contact form and thank-you page.
 
-## Accessibility and behaviour
-Keyboard navigation, visible focus indicators, skip link, responsive mobile menu, image alternative text, accessible filter buttons, and reduced-motion support are included. There are no tracking scripts, backend services, forms, or package dependencies. External fonts use Google Fonts. Paper links open the DOI or publisher page. Personal profile links use the supplied addresses.
+## Image preparation
+The clearer embedded originals from portfolio.docx are used where available. Consistent CSS framing provides project covers and thumbnails; the gallery displays the entire image without cropping. Diagrams, screenshots, scientific results and certificates retain their original text and data. Low-resolution source figures are not represented as recovered high-resolution evidence.
+
+The Army portrait received AI-assisted color, exposure and clarity enhancement using the built-in image tool. The retirement card is an edited, redacted public preview; the unredacted card is not included. These files are `assets/gallery/army-portrait.png` and `assets/gallery/retirement-card-redacted.png`.
+
+Editing prompts: preserve the Army portrait's identity, pose, uniform and outdoor setting while reducing excessive yellow/green saturation and improving exposure and natural clarity; preserve the retirement-card composition and visible service information while applying opaque bars over personal identifiers, parent names, permanent address, signatures and identifying strip.
+
+## Files and maintenance
+- `index.html`: text, links, project figures and embedded gallery configuration.
+- `styles.css`: responsive design, image framing and motion.
+- `script.js`: menu, publication filters, scroll effects, email copy and galleries.
+- `thanks.html`: return page after form processing.
+- `assets/gallery/`: 21 public portfolio images.
+- `assets/portrait.png`: original homepage portrait.
+- `assets/Tanvir-Ahmed-Fahim-CV.pdf` and `assets/Tanvir-Ahmed-Fahim-Resume.pdf`: updated personal email.
+
+No build or package installation is needed. Open index.html for local browsing; submit the form only from the published website. Google Fonts are optional, with system-font fallbacks. Copy email normally requires HTTPS.
+
+For a new paper, duplicate an article with class `paper`, set `data-status` to Published, Accepted or Under review, and update its filter count. Publication statuses are maintained manually. The degree retains its thesis-defense-pending note. Downloadable PDFs retain their supplied content apart from the personal email/contact-line layout.
+
+For a new gallery image, add its file, add the corresponding entry to `gallery-data` in index.html, and update the gallery's thumbnail links and figure count. All public image files can be saved by visitors; preview controls are not download protection.

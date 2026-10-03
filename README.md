@@ -9,7 +9,7 @@
 6. Wait for all 30 files to upload and click Commit changes.
 7. Wait for the latest Pages workflow to show a green check, open the website and press Ctrl+F5. Press Ctrl+0 to reset browser zoom to 100%.
 
-No deletion is needed. This package has no subfolders, making it easier to upload with the file picker. Keep all files at the repository root. Existing assets, styles.css and script.js can remain: the repaired page uses root-level images, portfolio-v3.css and portfolio-v3.js.
+No deletion is needed. This package has no subfolders, making it easier to upload with the file picker. Keep all files at the repository root. Existing assets, styles.css and script.js can remain: the repaired page uses root-level images, portfolio-v4.css and portfolio-v4.js.
 
 ## Repairs
 - Explicit width and height on every SVG icon, including fallback inline sizing.
@@ -22,3 +22,8 @@ No deletion is needed. This package has no subfolders, making it easier to uploa
 After publishing, submit the contact form once. Open the FormSubmit confirmation email sent to tanvirahmedfahim.baiust@gmail.com and activate the form. Check Spam if needed. Send a second test to verify delivery. No email delivery test has been sent by the builder.
 
 The Army portrait is AI-assisted in its color and clarity enhancement. The retirement card is a redacted public preview. Scientific diagrams, results and certificates retain supplied content. The gallery's full-size view displays the complete images. All public website images can be saved by visitors.
+
+## Visual update v4
+Colored tool cards and category icons, tool monograms, subtle hover/reveal animations, four detailed Leadership & Service entries, and a PhD aspiration paragraph. Descriptions use the supplied professional CV; cadet/scouting dates are omitted because the supplied CVs disagree. Reduced-motion preferences are respected. Upload all 30 files from this package together. The current stylesheet and script are portfolio-v4.css and portfolio-v4.js.
+
+The contact address uses a separate icon column so both address lines align.
